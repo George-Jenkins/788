@@ -1,0 +1,46 @@
+#container{
+text-align:center;
+}
+#section1{
+background-image:url(../pics/start-up-meeting.jpg);
+background-size:cover;
+background-repeat:no-repeat;
+height:750px;
+padding:0.1px;
+}
+	@media screen and (max-width:500px){
+	#section1{
+	background-image:none;
+	height:auto;
+	}
+	}
+#register-container{
+margin:50px auto 0 auto;
+padding:10px 0 25px 0;
+background-color:rgba(238, 241, 48, 0.8);
+max-width:500px;
+border-radius:9px;
+box-sizing:border-box;
+}
+	@media screen and (max-width:500px){
+	#register-container{
+	margin:0;
+	border-radius:0;
+	}
+	}
+#form-container{
+margin:0 auto;
+padding:0 5px;
+max-width:310px;
+}
+#form-container input[type=text], #form-container input[type=password]{
+
+}
+#form-container input[type=submit]{
+background-color:#EAEAEA;
+color:#000;
+cursor:pointer;
+width:200px;
+border-radius:3px;
+font-size:1.3em;
+}

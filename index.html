@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home Page</title>
+<link href='css/all-pages.css' type='text/css' rel='stylesheet'/>
+<link href='css/forms.css' type='text/css' rel='stylesheet'/>
+<link href='css/nav-bar.css' type='text/css' rel='stylesheet'/>
+<link href='css/index.css' type='text/css' rel='stylesheet'/>
+<link href='fonts/ptsans/stylesheet.css' type='text/css' rel='stylesheet'/>
+<link href='pics/favicon.png' rel='icon' />
+<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1'/>
+</head>
+<body>
+<div id='menu'>
+	<div id='menu-items-div' class='text2 relative'>
+    	<img src='pics/menu-icon.png' id='menu-icon' class='pointer'/>
+		<a href='index.html'><img id='logo' src='pics/witzkey-logo.png'/></a>
+        <div id='menu-links-div'>
+        	<a href='search-members.html' class='black-text-link'>Search Mentors</a>
+        	<a href='member-login.html' class='black-text-link'>Login</a>
+        </div>
+    </div>
+</div><!--menu-->
+
+<div id='mobile-dropdown' class='weak-hide text2'>
+	<a href='search-members.html' class='black-text-link'>Search Mentors</a>
+    <a href='member-login.html' class='black-text-link'>Login</a>
+</div><!--mobile-dropdown-->
+
+<div id='container'>
+
+	<div id='dark-background' class='hide'></div>
+	<div id='message-canvas-container' class='hide'>
+		<div id='message-canvas'>
+			<img id='close-x' src='pics/red-x.png' class='hide'/>
+			<span id='message-text'></span>
+		</div><!--message-canvas-->
+	</div><!--message-canvas-container-->
+	
+	<div id='section1'>
+    
+		<div id='register-container'>
+         <img src='pics/AppStore.png'/> <img src='pics/GooglePlay.png'/>
+			<div id='form-container'>
+				<div class='title black-text'>Plot Your Future</div>
+				
+				<span class='black-text text'>Find or be a career mentor</span>
+				<br>
+               
+				<form id='register' class='left'>
+					<span id='name-span' class='text'>Name</span>
+					<br>
+					<input name='name' type='text' class='general-input'>
+					<p>
+					<span id='email-span' class='text'>Email</span>
+					<br>
+					<input name='email' type='text' class='general-input'>
+					<p>
+					<span id='password-span' class='text'>Password</span>
+					<br>
+					<input name='password' type='password' class='general-input'>
+					<p>
+					<span id='repeat-password-span' class='text'>Repeat Password</span>
+					<br>
+					<input name='repeat-password' type='password' class='general-input'>
+					<p>
+					<span id='which-kind-span' class='text'>Which do you want to be?</span>
+					
+					<input class='general-radio' type='radio' name='select-kind' id='mentee-select' value='mentee'/><label for='mentee-select' class='text'>Mentee</label>
+					<input class='general-radio' type='radio' name='select-kind' id='mentor-select' value='mentor'/><label for='mentor-select' class='text'>Mentor</label>
+					<input type='hidden' name='IPAddress'>
+					<div class='center'>
+					<input type='submit' class='general-submit' value='Register'>
+					</div>
+				</form>
+			</div><!--form-container-->
+		</div><!--register-container-->
+	</div><!--section1-->
+</div><!--container-->
+
+<div id='bottom-menu' class='text2 weak-hide'>
+	<a href='search-members.html' class='black-text-link'><img src='pics/search-icon.png'/></a>
+    <a href='member-login.html' class='black-text-link'><img src='pics/login-arrow.png' /></a>
+</div><!--bottom-menu-->
+
+</div>
+
+</body>
+
+<script src='js/jquery.js'></script>
+<script src='js/jquery-animate-enhanced.js'></script>
+<script src='js/fastclick.js'></script>
+<script src='js/functions.js'></script>
+<script src='sjcl-master/sjcl.js'></script>
+<script src='js/nav-bar.js'></script>
+<script src='js/index.js'></script>
+<script src="http://freegeoip.net/json/?callback=cb" type="text/javascript"></script>
+<script src='phonegap.js'></script>
+</html>

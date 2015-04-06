@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html><!-- InstanceBegin template="/Templates/template2.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="EditRegion4" -->
+<title>Profile</title>
+<!-- InstanceEndEditable -->
+<link href='../css/all-pages.css' type='text/css' rel='stylesheet'/>
+<link href='../css/forms.css' type='text/css' rel='stylesheet'/>
+<link href='../css/nav-bar.css' type='text/css' rel='stylesheet'/>
+<link href='../fonts/ptsans/stylesheet.css' type='text/css' rel='stylesheet'/>
+<link href='../pics/favicon.png' rel='icon' />
+<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1'/>
+<!-- InstanceBeginEditable name="head" -->
+<link href='../css/login/profile.css' type='text/css' rel='stylesheet'/>
+<!-- InstanceEndEditable -->
+</head>
+<body>
+
+<div id='menu'>
+	<div id='menu-items-div' class='text2 relative'>
+    	<img src='../pics/menu-icon.png' id='menu-icon' class='pointer'/>
+		<a href='../index.html'><img id='logo' src='../pics/witzkey-logo.png'/></a>
+        <div id='menu-links-div'>
+        	<a href='' class='profile-link black-text-link'>Profile</a><!--link is set in check login-->
+        	<a href='search-members.html' class='black-text-link'>Search Mentors</a>
+            <a href='settings.html' class='black-text-link'>Settings</a>
+        	<a href='../member-login.html' class='black-text-link'>Log Out</a>
+        </div>
+    </div>
+</div><!--menu-->
+
+<div id='mobile-dropdown' class='weak-hide text2'>
+	<a href='' class='profile-link black-text-link'>Profile</a><!--link is set in check login-->
+    <a href='search-members.html' class='black-text-link'>Search Mentors</a>
+    <a href='settings.html' class='black-text-link'>Settings</a>
+    <a href='../member-login.html' class='black-text-link'>Log Out</a>
+</div><!--mobile-dropdown-->
+
+<div id='container'>
+
+<div id='dark-background' class='hide'></div>
+<div id='message-canvas-container' class='hide'>
+	<div id='message-canvas'>
+		<img id='close-x' src='../pics/red-x.png' class='hide'/>
+		<span id='message-text'></span>
+	</div><!--message-canvas-->
+</div><!--message-canvas-container-->
+
+<!-- InstanceBeginEditable name="EditRegion1" -->
+
+<div id='profile-container' class='relative'>
+
+<div id='decorative-header' class='absolute'></div>
+
+<div id='decorative-header2' class='weak-hide'>
+	<div id='profile-name2' class='title padding-bottom10'></div>
+</div><!--decorative-header2-->
+
+<div id='profile-image-div' class='inline'>
+	<div id='profile-image-border'>
+		<div id='profile-image' class='standard-background relative'>
+       		<img src='../pics/ajax-loader4.gif' id='image-change-loader' class='image-loader hide absolute'/>
+        </div><!--profile-image-->
+	</div><!--profile-image-border-->
+	<div id='change-profile-img' class='inline relative hide-overflow text2 button1 hide edit-option'>Change
+    	<form method='POST' enctype='multipart/form-data' action='queries/change-profile-image.php' id='profile-image-form' target='profile-image-frame'>
+    	<input name='image' id='image-input' class='file-form' type='file'/>
+        <input id='z1' name='z' type='hidden'/>
+    	</form>
+        <iframe name='profile-image-frame' class='hide'></iframe>
+    </div><!--change-profile-img-->
+    
+    <div id='profile-image-message' class='red-text text2 inline'></div>
+    
+</div><!--profile-image-div-->
+
+
+<div id='profile-info-div' class='inline'>
+	<div id='profile-name' class='title padding-bottom10'></div>
+    
+    <div id='profession-div' class='left padding-bottom10 line-height1'>
+    	<span id='edit-profession' class='functionLink text2 hide edit-option'>Edit</span>
+        <div id='done-edit-profession' class='inline hide functionLink text2'>Done</div>
+        <div id='cancel-edit-profession' class='inline hide functionLink text2 cancel-button'>Cancel</div>
+    	<div id='profession-title' class='text2-bold'>Occupation</div>
+        <input type='text' id='profession-input' class='general-input hide'/>
+        <div id='profession' class='text2'></div>
+    </div><!--profession-div-->
+    
+    <div id='in-school-div' class='left padding-bottom10 line-height1 hide edit-option'>
+    	<div id='in-school-title' class='text2-bold'>In school?</div>
+       <div id='in-school-yes' class='button2 text2'>Yes</div>
+       <div id='in-school-no' class='button2 text2'>No</div>
+    </div>
+    
+    <div id='school-div' class='left hide padding-bottom10 line-height1'>
+    	<span id='edit-school' class='functionLink text2 hide edit-option'>Edit</span>
+        <div id='done-edit-school' class='inline hide functionLink text2'>Done</div>
+        <div id='cancel-edit-school' class='inline hide functionLink text2 cancel-button'>Cancel</div>
+    	<div id='school-title' class='text2-bold'>School</div>
+        <input type='text' id='school-input' class='general-input hide'/>
+        <div id='school' class='text2'></div>
+    </div><!--profession-div-->
+    
+    <div id='practice-location-div' class='left padding-bottom10 line-height1'>
+    	<span id='edit-practice-location' class='functionLink text2 hide edit-option'>Edit</span>
+        <div id='done-edit-practice-location' class='inline hide functionLink text2'>Done</div>
+        <div id='cancel-edit-practice-location' class='inline hide functionLink text2 cancel-button'>Cancel</div>
+    	<div id='practice-location-title' class='text2-bold'>Working in</div>
+        <input type='text' id='practice-location-input' class='general-input hide'/>
+        <div id='practice-location' class='text2'></div>
+    </div><!--practice-location-div-->
+    
+     <div id='background-info-div' class='left line-height1'>
+        <span id='edit-background' class='functionLink text2 hide edit-option'>Edit</span>
+        <div id='done-edit-background' class='inline hide functionLink text2'>Done</div>
+        <div id='cancel-edit-background' class='inline hide functionLink text2 cancel-button'>Cancel</div>
+    	<div id='background-info-title' class='text2-bold'>Background</div>
+        <textarea id='background-input' class='general-textarea hide'></textarea>
+        <div id='background' class='text2'></div>
+    </div><!--practice-location-div-->
+    
+</div><!--profile-info-div-->
+
+</div><!--profile-container-->
+
+<!-- InstanceEndEditable -->
+</div><!--container-->
+
+<div id='bottom-menu' class='text2 weak-hide'>
+	<a href='' class='profile-link black-text-link'><img src='../pics/profile-icon2.png'/></a>
+	<a href='search-members.html' class='black-text-link'><img src='../pics/search-icon.png'/></a>
+    <a href='settings.html' class='black-text-link'><img src='../pics/settings-icon.png' /></a>
+    <a href='../member-login.html' class='black-text-link'><img src='../pics/logout-arrow.png' /></a>
+</div><!--bottom-menu-->
+
+</body>
+<script src='../js/jquery.js'></script>
+<script src='../js/fastclick.js'></script>
+<script src='../js/functions.js'></script>
+<script src='../sjcl-master/sjcl.js'></script>
+<script src='../js/nav-bar.js'></script>
+<script src='../js/login/check-login.js'></script>
+<script src='../phonegap.js'></script>
+<!-- InstanceBeginEditable name="EditRegion2" -->
+<script src='../js/login/load-profile.js'></script>
+<script src='../js/login/edit-mentee-profile.js'></script>
+<!-- InstanceEndEditable -->
+<!-- InstanceEnd --></html>

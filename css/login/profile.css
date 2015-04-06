@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+
+#profile-container{
+max-width:800px;
+margin:10px auto 0 auto;
+}
+	@media screen and (max-width:720px){
+	#profile-container{
+	text-align:center;	
+	}
+	}
+#decorative-header, #decorative-header2{
+background-color:rgba(238, 241, 48, 0.8);
+min-height:55px;
+width:100%;	
+z-index:-1;
+}
+	@media screen and (max-width:720px){
+	#decorative-header{
+	display:none;
+	}
+	#decorative-header2{
+	display:block;
+	}
+	#profile-name{
+	display:none;
+	}
+	}
+#profile-image-div{
+padding:5px;
+text-align:left;
+}
+
+#profile-image-border{
+padding:4px;
+border:thin solid rgba(238, 241, 48, 0.8);
+margin:0 0 0 -5px;	
+}
+	@media screen and (max-width:720px){
+	#profile-image-border{
+	margin:0;
+	}
+	}
+#profile-image{
+width:250px;
+height:250px;		
+}
+	@media screen and (max-width:400px){
+	#profile-image{
+	width:150px;
+	height:150px;		
+	}	
+	}
+#profile-info-div{
+width:100%;
+max-width:420px;
+padding:0 5px;
+box-sizing:border-box;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+}
+
+#image-change-loader{
+width:150px;
+top:50%;
+left:50%;
+margin:-75px 0 0 -75px;	
+}
+
+#change-profile-img{
+margin:0 0 0 -5px;	
+}
+#contact-button{
+margin:0 0 0 -5px;	
+}
+	@media screen and (max-width:720px){
+	#change-profile-img{
+	margin:0;	
+	}
+	#contact-button{
+	margin:0;	
+	}
+	}
+#background-input{
+width:300px;
+height:300px;
+}
+
+.cancel-button{
+margin:0 0 0 10px;	
+}

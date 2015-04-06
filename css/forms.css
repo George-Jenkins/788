@@ -1,0 +1,190 @@
+@charset "utf-8";
+/* CSS Document */
+.general-input, .general-input-long, .general-textarea{
+	font-family:'PTSansRegular';
+	font-size:1em;
+}
+ input[type=text].general-input, input[type=password].general-input{
+	font-family:'PTSansRegular';
+	height:39px;
+	width:100%;
+	max-width:304px;
+	border:thin solid #333;
+	-webkit-border:thin solid #333;
+	-moz-border:thin solid #333;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	padding:2px;
+	box-sizing:border-box;
+	font-size:1em;
+	text-align:left;
+}
+input[type=text].general-input-long , input[type=password].general-input-long{
+	font-family:'PTSansRegular';
+	height:30px;
+	width:100%;
+	width:280px;
+	border:thin solid #333;
+	-webkit-border:thin solid #333;
+	-moz-border:thin solid #333;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	padding:2px;
+	font-size:1em;
+	text-align:left;
+}
+input[type=text].general-input:focus, input[type=password].general-input:focus{
+	border:thin solid #039;
+	-webkit-border:thin solid #039;
+	-moz-border:thin solid #039;
+}
+textarea.general-textarea{
+	font-family:'PTSansRegular';
+	height:100px;
+	width:100%;
+	max-width:295px;
+	border:thin solid #333;
+	-webkit-border:thin solid #333;
+	-moz-border:thin solid #333;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	padding:2px;
+	font-size:1em;
+	text-align:left;
+}
+textarea.general-textarea:focus{
+	border:thin solid #039;
+	-webkit-border:thin solid #039;
+	-moz-border:thin solid #039;
+}
+input[type=submit].general-submit{
+	background-color:#003;
+	height:35px;
+	padding:3px 10px;
+	text-align:center;
+	font-family:'PTSansRegular';
+	color:#fff;
+	font-size:1.1em;
+	border:none;
+	-moz-border:none;
+	-webkit-border:none;
+}
+input[type=submit].general-submit2{
+	background-color:#EAEAEA;
+	color:#000;
+	cursor:pointer;
+	min-width:150px;
+	border-radius:3px;
+	font-size:1.3em;
+	height:35px;
+	padding:3px 10px;
+	text-align:center;
+	font-family:'PTSansRegular';
+	border:none;
+	-moz-border:none;
+	-webkit-border:none;
+}
+.general-submit input[type=submit]:hover{
+	background-color:#009;
+}
+.upload-button{
+	font-family:'PTSansRegular';
+	font-size:1.1em;
+	position: relative;
+	overflow: hidden;
+	color:#fff;
+	background-color:#003;
+	width:100%;
+	max-width:100px;
+	text-align:center;
+	padding:5px;
+}
+.upload-button input.upload{
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 10px;
+	cursor: pointer;
+	height:35px;
+	width:187px;
+	opacity:0;
+	filter: alpha(opacity=0);
+	background-color:#003;
+}
+/* I made these to make forms look the same*/
+.form-title{
+	font-size:1.5em;
+	margin:0 0 5px 0;
+	max-width:290px;
+}
+.form-background{
+	background-color:#EBEBE0;
+}
+.form-elements{
+	width:100%;
+	max-width:300px;
+}
+.form-container{
+	background-color:#EBEBE0;
+	width:100%;
+	max-width:450px;
+	padding:40px 0;
+}
+/* End I made these to make forms look the same*/
+.general-select select{
+	height:30px;
+	border:thin solid #333;
+	-webkit-border:thin solid #333;
+	-moz-border:thin solid #333;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+}
+
+/*handles radio buttons*/
+ input[type=radio].general-radio, input[type=checkbox].general-checkbox {
+    display:none;
+}
+ 
+ input[type=radio].general-radio + label, input[type=checkbox].general-checkbox + label {
+    display:inline-block;
+    margin:;
+	min-width:70px;
+    padding: 4px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255,255,255,0.75);
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    background-image: -moz-linear-gradient(top,#fff,#e6e6e6);
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#fff),to(#e6e6e6));
+    background-image: -webkit-linear-gradient(top,#fff,#e6e6e6);
+    background-image: -o-linear-gradient(top,#fff,#e6e6e6);
+    background-image: linear-gradient(to bottom,#fff,#e6e6e6);
+    background-repeat: repeat-x;
+    border: 1px solid #000;
+    border-color: #666;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffe6e6e6',GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+}
+ 
+ input[type=radio].general-radio:checked + label, input[type=checkbox].general-checkbox:checked + label {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
+    -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
+    background-color:#e0e0e0;
+}

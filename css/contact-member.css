@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+
+.profile-image{
+width:100px;
+height:auto;
+border-radius:999px;
+}
+#message-textarea{
+width:600px;	
+}
