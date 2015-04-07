@@ -6,7 +6,7 @@ padding:0;
 margin:70px 0 0 0;
 padding:0.1px;
 }
-	@media screen and (max-width:700px){
+	@media screen and (max-width:770px){
 	#container{
 	margin:40px 0 40px 0;
 	}	
@@ -183,8 +183,18 @@ background-color:#999;
 }
 .functionLink{
 color:#099;
-cursor:pointer;	
+cursor:pointer;		
 }
+	@media screen and (max-width:1024px){
+	.functionLink{
+	padding:3px;
+	background-color:#CCCCCC;
+	line-height:normal;
+	min-width:52px;
+	text-align:center;
+	display:inline-block;
+	}	
+	}
 .pointer{
 cursor:pointer;	
 }
