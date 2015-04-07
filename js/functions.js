@@ -75,7 +75,7 @@ function checkMobileUpload(imageDiv,loader,messageDiv,zDiv){
 	function(data){
 	
 	if(currentImage!=data.profileImage){
-		$('#'+imageDiv).css('background-image','url(../pics/'+data.folder+'/'+data.profileImage+')')
+		$('#'+imageDiv).css('background-image','url('+data.path+')')
 		$('#'+loader).addClass('hide')
 		clearInterval(checkInterval)
 	}//if
