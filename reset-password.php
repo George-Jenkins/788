@@ -42,8 +42,6 @@
 <center>
 <div class='title'>Reset Password</div>
 
-<p>
-
 <div class='general-form-container'>
 
 <div class='general-form-div'>

@@ -21,8 +21,6 @@ $.post(path+'queries/contact-member.php',{z:z,id:id},function(data){
 	$('#profile-image-div').html(profileImage)
 },'json')//post
 
-$('#message-textarea').focus()
-
 $('#submit-form').click(function(){
 	var message = $('#message-textarea').val()
 	if(!message) return;

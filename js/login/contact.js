@@ -1,6 +1,4 @@
 (function(){
-	
-$('#message-textarea').focus()
 
 $('#submit-form').click(function(){
 	var message = $('#message-textarea').val()

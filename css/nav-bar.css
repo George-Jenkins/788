@@ -10,7 +10,7 @@ box-sizing:border-box;
 -moz-box-sizing:border-box;
 -webit-box-sizing:border-box;
 }
-	@media screen and (max-width:700px){
+	@media screen and (max-width:770px){
 	#menu{
 	height:40px;	
 	}	
@@ -25,13 +25,13 @@ position:absolute;
 right:0;
 top:20px;	
 }
-	@media screen and (max-width:700px){
+	@media screen and (max-width:770px){
 	#menu-links-div{
 	display:none;	
 	}	
 	}
 #menu-links-div a{
-margin:0 20px;	
+margin:0 15px;	
 padding:5px;
 box-sizing:border-box;
 -moz-box-sizing:border-box;
@@ -42,7 +42,7 @@ box-sizing:border-box;
 	margin:5px 0 0 0;
 	display:none;
 }
-	@media screen and (max-width:700px){
+	@media screen and (max-width:770px){
 	#menu-icon{
 	/*display:inline-block;
 	height:auto; uncomment this to enable the side menu on mobile*/
@@ -55,7 +55,7 @@ max-width:225px;
 position:absolute;
 left:0;
 }
-	@media screen and (max-width:700px){
+	@media screen and (max-width:770px){
 	#logo{
 	right:0;
 	left:auto;
@@ -92,11 +92,11 @@ box-sizing:border-box;
 -moz-box-sizing:border-box;
 -webit-box-sizing:border-box;	
 }
-	@media screen and (max-width:700px){
+	@media screen and (max-width:770px){
 	#bottom-menu{
 	display:block;
 	}	
 	}
 #bottom-menu a{
-margin:0 15px;	
+margin:0 12px;	
 }
