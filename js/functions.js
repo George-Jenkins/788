@@ -70,7 +70,7 @@ function checkMobileUpload(imageDiv,loader,messageDiv,zDiv){
 	var currentImageArray = currentImageUrl.split('/')
 	var currentImage = currentImageArray[currentImageArray.length-1].replace(')','');	
 
-	$.post('http://brainbagel.com/login/queries/check-mobile-upload.php',
+	$.post('http://witzkey.com/login/queries/check-mobile-upload.php',
 	{z:z,image:'profile'},
 	function(data){
 	
