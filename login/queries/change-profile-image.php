@@ -51,9 +51,11 @@ move_uploaded_file($imageTmpName,$path);
 //resize image
 ak_img_resize($path,$path, 400, 400, $extension);
 
+$domain = getDomain();
+
 echo "
 <script>
-parent.imageFeedBack('done','../pics/".$folder."/".$newName."')
+parent.imageFeedBack('done','".$domain."/pics/".$folder."/".$newName."')
 </script>
 ";
 

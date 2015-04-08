@@ -13,8 +13,8 @@ switch($image){
 	case 'profile':
 		$folder = getImageFolder($email);
 		$profileImage = getProfilePhoto($email);
-		$return['folder'] = $folder;
-		$return['profileImage'] = $profileImage;
+		$domain = getDomain();
+		$return['path'] = $domain.'/pics/'.$folder.'/'.$profileImage;
 		echo json_encode($return);
 	; 
 	break;	

@@ -28,8 +28,10 @@ $imageJson = $get['images_json'];
 $imageArray = json_decode($imageJson,true);
 $image = $imageArray['profile'];
 
-if($image) $path = "../pics/".$folder."/".$image;
-else $path = "../pics/profile-icon.png";
+$domain = getDomain();
+
+if($image) $path = $domain."/pics/".$folder."/".$image;
+else $path = $domain."/pics/profile-icon.png";
 
 $return['image'] = $path;
 

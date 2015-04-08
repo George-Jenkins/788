@@ -3,8 +3,6 @@ include('../../connect/connect.php');
 include('../../connect/functions.php');
 dbConnect('members');
 
-//$email = validateUser();
-
 $loginID = $_POST['z'];
 $ip = $_POST['ip'];
 
@@ -13,7 +11,7 @@ $profession = $_POST['profession'];
 
 //get city state on load
 if($_POST['load'] && $loginID){
-	$email = validateUser();
+	$email = getEmail();
 	$code2 = getCode2($email);
 	$query = mysql_query("SELECT * FROM member_info WHERE code2='$code2'");
 	$get = mysql_fetch_assoc($query);
@@ -79,10 +77,12 @@ while($get_array = mysql_fetch_array($query)){
 	$imagesJson = $get2['images_json'];
 	$imagesArray = json_decode($imagesJson,true);
 	$profileImage = $imagesArray['profile'];
-	if($profileImage) $path = "../pics/".$folder."/".$profileImage;
-	else $path = "../pics/profile-icon.png";
+	$domain = getDomain();
+	if($profileImage) $path = $domain."/pics/".$folder."/".$profileImage;
+	else $path = $domain."/pics/profile-icon.png";
 	
 	$link = '../login/mentor.html?id='.$id;
+	
 	
 	$x = 0;
 	while($x<5){
