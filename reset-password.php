@@ -82,6 +82,8 @@
 <!-- InstanceEndEditable -->
 </div><!--container-->
 
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(100833307); }catch(e){}</script>
 
 </body>
 <script src='js/jquery.js'></script>

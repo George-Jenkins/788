@@ -17,8 +17,7 @@ var z = getZ()
 var path = getPostPath('http://witzkey.com/login/')
 $.post(path+'queries/contact-member.php',{z:z,id:id},function(data){
 	$('#contact-name').html(data.contact)
-	var profileImage = "<img src='"+data.imagePath+"' class='profile-image'/>";
-	$('#profile-image-div').html(profileImage)
+	$('#profile-image-div').css('background-image','url('+data.imagePath+')')
 },'json')//post
 
 $('#submit-form').click(function(){

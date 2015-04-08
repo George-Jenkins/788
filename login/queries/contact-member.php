@@ -20,8 +20,9 @@ if(!$message){//if loading page
 	$memberName = $get['name'];
 	
 	$profileImage = getProfilePhoto($memberEmail);
-	if($profileImage) $imagePath = '../pics/'.$folder.'/'.$profileImage;
-	else $imagePath = '../pics/profile-icon.png';
+	$domain = getDomain();
+	if($profileImage) $imagePath = $domain.'/pics/'.$folder.'/'.$profileImage;
+	else $imagePath = $domain.'/pics/profile-icon.png';
 
 	$return['contact'] = 'Contact '.ucwords($memberName);
 	$return['imagePath'] = $imagePath;
@@ -33,14 +34,19 @@ else{//else if message
 	
 	$query = mysql_query("SELECT * FROM members WHERE email='$memberEmail'");
 	$get = mysql_fetch_assoc($query);
-	$name = explode(' ',ucwords($get['name']));
-	$firstName = $name[0];
+	$name = $get['name'];
 	$id = $get['id'];
 	//get name of person being contacted
 	$query = mysql_query("SELECT * FROM members WHERE email='$memberEmail'");
 	$get = mysql_fetch_assoc($query);
 	$memberName = explode(' ',ucwords($get['name']));
 	$memberFirstName = $memberName[0];
+	
+	//add message to db
+	$senderCode2 = getCode2($email);
+	$recipientCode2 = getCode2($memberEmail);
+	$time = time();
+	mysql_query("INSERT INTO messages VALUES ('','$senderCode2','$recipientCode2','$message','$time')");
 	
 	$profilePage = "http://WitzKey.com/login/mentee?id=".$id;
 	
@@ -50,7 +56,7 @@ else{//else if message
 	
 	$body_html = "<div style='".$font1."'>
 	<p>Hey ".$memberFirstName."!</p> 
-	<p>".$firstName." sent you the message below.</p>
+	<p>".$name." sent you the message below.</p>
 	<p><hr></p>
 	Email: ".$email."
 	<p>Profile: <a href='".$profilePage."'>WitzKey.com</a></p>
@@ -59,7 +65,7 @@ else{//else if message
 	
 	$body_text = "Hey ".$memberFirstName."! 
 	\n\n
-	".$firstName." sent you the message below.
+	".$name." sent you the message below.
 	\n\n
 	Email: ".$email."
 	\n\nProfile: ".$profilePage."

@@ -1,7 +1,12 @@
 (function(){ 
 
 //check if logged in
-if(!getK()){ sessionStorage.setItem('lastPage',document.location.href); window.location = path+"member-login.html"}
+if(!getZ()){
+	sessionStorage.setItem('lastPage',document.location.href);
+	var path = pathToRoot() 
+	window.location = path+"member-login.html"
+	return;	
+}
 
 function checkLogin(){
 	var z = getZ()

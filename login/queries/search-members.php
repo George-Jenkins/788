@@ -83,9 +83,6 @@ while($get_array = mysql_fetch_array($query)){
 	
 	$link = '../login/mentor.html?id='.$id;
 	
-	
-	$x = 0;
-	while($x<5){
 	$result .= "
 	<div class='member-list-div left'>
 		<div class='inline list-profile-image standard-background no-background' style='background-image:url(".$path.")'></div>
@@ -96,8 +93,6 @@ while($get_array = mysql_fetch_array($query)){
 		</div>
 	</div>
 	"; 
-	$x++;
-	}
 }//while
 
 if(!$result) $result = '<div class="text">No results</div>';
