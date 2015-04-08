@@ -4,6 +4,8 @@
 var type = localStorage.getItem('type')
 if(mobile && getZ() && type && typeof type!=='undefined') window.location = 'login/'+type+'.html'
 
+if(!mobile) $('#app-store-link').removeClass('hide')
+
 //get user's ip
 cb = function(o){
 	localStorage.setItem('ip',o.ip)

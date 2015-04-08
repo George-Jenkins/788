@@ -4,7 +4,7 @@ cb = function(o){
 	localStorage.setItem('ip',o.ip)
 }
 //fill in location on load
-var path = getPostPath('http://witzkey.com/login/')
+var path = getPostPath('http://witzkey.com/')
 path += pathToRoot()
 
 var z = getZ()
@@ -16,14 +16,14 @@ if(z){//get practice location if logged in
 else{//else get ip
 	var ip = localStorage.getItem('ip')
 	$.post(path+'login/queries/search-members.php',{load:'load',ip:ip},function(data){
-		if(!$('#search-area-input').val()) $('#search-area-input').val(data.location)	
+		if(!$('#search-area-input').val()) $('#search-area-input').val(data.location)
 	},'json')//post
 }//else
 
 
 $('#submit-form').click(function(){
 		
-	var path = getPostPath('http://witzkey.com/login/')
+	var path = getPostPath('http://witzkey.com/')
 	path += pathToRoot()	
 		
 	var searchArea = $('#search-area-input').val()

@@ -92,5 +92,4 @@ function checkMobileUpload(imageDiv,loader,messageDiv,zDiv){
 }//function
 
 var mobile = '';
-
 mobile = true;
