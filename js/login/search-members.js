@@ -32,10 +32,13 @@ $('#submit-form').click(function(){
 	if(!searchArea || !profession) return;
 	
 	$('#form-loader').removeClass('hide')
+	
+	var z = getZ()
 		
 	$.post(path+'login/queries/search-members.php',
 	{searchArea:searchArea,
-	profession:profession},
+	profession:profession,
+	z:z},
 	function(data){
 		
 		$('#form-loader').addClass('hide')	
